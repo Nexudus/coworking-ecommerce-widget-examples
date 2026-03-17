@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Book a meeting room at Kalkio Workspace — fully equipped, bookable by the hour. AV, catering, and high-speed Wi-Fi included." />
+  <title>Meeting Rooms — Kalkio Workspace</title>
+
+  <script src="https://mcp.figma.com/mcp/html-to-design/capture.js" async></script>
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Parkinsans:wght@400;500;600&family=Poppins:wght@400;500;600&display=swap" rel="stylesheet" />
+
+  <!-- Shared Stylesheet -->
+  <link rel="stylesheet" href="styles.css" />
+
+  <!--
+    NEXUDUS BOOKING WIDGET SCRIPT
+    This script enables the embedded booking widget below.
+    TODO: Confirm this is the correct CDN URL with your Nexudus account manager.
+  -->
+  <script src="https://cdn.nexudus.site/widget/nexudus-widget.min.js" defer></script>
+</head>
+<body>
+
+  <!-- =============================================
+       NAVIGATION
+       ============================================= -->
+  <header class="site-nav" role="banner">
+    <div class="container nav-inner">
+      <a href="index.html" class="nav-logo" aria-label="Kalkio Workspace — Home">Kalkio Workspace</a>
+
+      <nav class="nav-links" aria-label="Primary navigation">
+        <a href="locations.html">Locations</a>
+        <a href="meeting-rooms.html" class="active">Meeting Rooms</a>
+        <a href="event-spaces.html">Event Spaces</a>
+        <a href="book-tour.html">Book a Tour</a>
+      </nav>
+
+      <div class="nav-actions">
+        <a href="#" class="btn btn-primary">Member login</a>
+      </div>
+
+      <button class="nav-hamburger" aria-label="Open menu" aria-expanded="false" aria-controls="mobile-menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+
+    <nav class="nav-mobile" id="mobile-menu" aria-label="Mobile navigation">
+      <a href="locations.html">Locations</a>
+      <a href="meeting-rooms.html">Meeting Rooms</a>
+      <a href="event-spaces.html">Event Spaces</a>
+      <a href="book-tour.html">Book a Tour</a>
+      <div class="nav-mobile-actions">
+        <a href="#" class="btn btn-secondary">Member Login</a>
+        <a href="book-tour.html" class="btn btn-primary">Book a Tour</a>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+
+    <!-- =============================================
+         PAGE HERO
+         ============================================= -->
+    <section class="page-hero" aria-labelledby="page-hero-heading">
+      <div class="container">
+        <nav class="breadcrumb" aria-label="Breadcrumb">
+          <a href="index.html">Home</a>
+          <span class="breadcrumb-sep" aria-hidden="true">/</span>
+          <span aria-current="page">Meeting Rooms</span>
+        </nav>
+        <h1 class="page-hero-title" id="page-hero-heading">Book a Meeting Room</h1>
+        <p class="page-hero-subtitle">Fully equipped, professionally designed spaces bookable by the hour — no membership required. AV, catering, and blazing-fast Wi-Fi all included.</p>
+      </div>
+    </section>
+
+    <!-- =============================================
+         NEXUDUS BOOKING WIDGET
+         ============================================= -->
+    <!--
+      BOOKING WIDGET — Nexudus Integration
+      - Replace 'your-location' in the `url` attribute with your actual Nexudus subdomain
+        e.g. url="https://kalkiocentral.nexudus.site/bookings/meeting-rooms/list"
+      - The widget is loaded by the <script src="...nexudus-widget.min.js"> in <head>
+      - Adjust hide-header / hide-footer / hide-logo as needed
+    -->
+    <section id="booking-widget" class="widget-section" aria-labelledby="widget-heading">
+      <div class="container">
+        <!-- Replace 'your-location' in the url attribute with your actual Nexudus subdomain -->
+        <div
+          id="nexudus-widget-iframe"
+          url="https://coworking-network.nexudus.site/coworking-network/bookings/meeting-rooms/list"
+          hide-header="true"
+          hide-footer="true"
+          hide-logo="true"
+          aria-label="Meeting room booking widget"
+        ></div>
+      </div>
+    </section>
+
+    <!-- =============================================
+         CTA STRIP
+         ============================================= -->
+    <section class="cta-strip" aria-labelledby="rooms-cta-heading">
+      <div class="container">
+        <h2 id="rooms-cta-heading">Not sure which room you need?</h2>
+        <p>Our team can help you find the perfect setup for your event. Just get in touch.</p>
+        <div class="cta-strip-actions">
+          <a href="book-tour.html" class="btn btn-white">Book a Tour</a>
+          <a href="index.html#enquire" class="btn btn-outline-white">Contact Us</a>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- =============================================
+       FOOTER
+       ============================================= -->
+  <footer class="site-footer" role="contentinfo">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a href="index.html" class="nav-logo" aria-label="Kalkio Workspace — Home">Kalkio Workspace</a>
+          <p>Inspiring coworking spaces designed for focus, collaboration, and growth.</p>
+          <div class="footer-social" aria-label="Social media links">
+            <a href="#" class="social-icon" aria-label="LinkedIn">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6zM2 9h4v12H2z"/><circle cx="4" cy="4" r="2"/></svg>
+            </a>
+            <a href="#" class="social-icon" aria-label="Instagram">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg>
+            </a>
+            <a href="#" class="social-icon" aria-label="X (Twitter)">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg>
+            </a>
+          </div>
+        </div>
+        <nav class="footer-col" aria-label="Spaces links">
+          <h4>Spaces</h4>
+          <ul>
+            <li><a href="locations.html">All Locations</a></li>
+            <li><a href="meeting-rooms.html">Meeting Rooms</a></li>
+            <li><a href="event-spaces.html">Event Spaces</a></li>
+          </ul>
+        </nav>
+        <nav class="footer-col" aria-label="Company links">
+          <h4>Company</h4>
+          <ul>
+            <li><a href="#">About Us</a></li>
+            <li><a href="#">Careers</a></li>
+            <li><a href="#">Blog</a></li>
+          </ul>
+        </nav>
+        <nav class="footer-col" aria-label="Support links">
+          <h4>Support</h4>
+          <ul>
+            <li><a href="book-tour.html">Book a Tour</a></li>
+            <li><a href="index.html#enquire">Contact Us</a></li>
+            <li><a href="#">FAQs</a></li>
+          </ul>
+        </nav>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2025 Kalkio Workspace Ltd. All rights reserved.</p>
+        <div class="footer-bottom-links">
+          <a href="#">Privacy Policy</a>
+          <a href="#">Terms of Use</a>
+          <a href="#">Cookie Policy</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Chatbot -->
+  <button id="chat-launcher" aria-label="Open chat" aria-expanded="false" aria-controls="chat-widget">
+    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg>
+  </button>
+  <div id="chat-widget" role="dialog" aria-label="Kalkio Support Chat" aria-modal="true">
+    <div class="chat-header">
+      <div class="chat-header-info">
+        <span class="chat-header-dot" aria-hidden="true"></span>
+        <span>Kalkio Support</span>
+      </div>
+      <button id="chat-close" aria-label="Close chat">&#x2715;</button>
+    </div>
+    <div class="chat-body">
+      <!-- TODO: Replace with your chatbot embed code -->
+      <p class="chat-placeholder-msg">Chat embed will appear here.<br />Replace this placeholder with your platform's chatbot embed code.</p>
+    </div>
+  </div>
+
+  <script src="main.js"></script>
+</body>
+</html>

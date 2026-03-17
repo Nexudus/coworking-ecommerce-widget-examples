@@ -1,0 +1,381 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Kalkio Workspace locations — Central, Riverside, and East. Find the right coworking space for you." />
+  <title>Locations — Kalkio Workspace</title>
+
+  <script src="https://mcp.figma.com/mcp/html-to-design/capture.js" async></script>
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Parkinsans:wght@400;500;600&family=Poppins:wght@400;500;600&display=swap" rel="stylesheet" />
+
+  <!-- Shared Stylesheet -->
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <!-- =============================================
+       NAVIGATION
+       ============================================= -->
+  <header class="site-nav" role="banner">
+    <div class="container nav-inner">
+      <a href="index.html" class="nav-logo" aria-label="Kalkio Workspace — Home">Kalkio Workspace</a>
+
+      <nav class="nav-links" aria-label="Primary navigation">
+        <a href="locations.html" class="active">Locations</a>
+        <a href="meeting-rooms.html">Meeting Rooms</a>
+        <a href="event-spaces.html">Event Spaces</a>
+        <a href="book-tour.html">Book a Tour</a>
+      </nav>
+
+      <div class="nav-actions">
+        <a href="#" class="btn btn-primary">Member login</a>
+      </div>
+
+      <button class="nav-hamburger" aria-label="Open menu" aria-expanded="false" aria-controls="mobile-menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+
+    <nav class="nav-mobile" id="mobile-menu" aria-label="Mobile navigation">
+      <a href="locations.html">Locations</a>
+      <a href="meeting-rooms.html">Meeting Rooms</a>
+      <a href="event-spaces.html">Event Spaces</a>
+      <a href="book-tour.html">Book a Tour</a>
+      <div class="nav-mobile-actions">
+        <a href="#" class="btn btn-secondary">Member Login</a>
+        <a href="book-tour.html" class="btn btn-primary">Book a Tour</a>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+
+    <!-- =============================================
+         PAGE HERO
+         ============================================= -->
+    <section class="page-hero" aria-labelledby="page-hero-heading">
+      <div class="container">
+        <nav class="breadcrumb" aria-label="Breadcrumb">
+          <a href="index.html">Home</a>
+          <span class="breadcrumb-sep" aria-hidden="true">/</span>
+          <span aria-current="page">Locations</span>
+        </nav>
+        <h1 class="page-hero-title" id="page-hero-heading">Our Locations</h1>
+        <p class="page-hero-subtitle">Three unique spaces, one standard of excellence. Find your Kalkio — and make it yours.</p>
+      </div>
+    </section>
+
+    <!-- =============================================
+         FULL LOCATION CARDS
+         ============================================= -->
+    <section class="locations-full-section" aria-labelledby="locations-full-heading">
+      <div class="container">
+        <div class="locations-full-grid">
+
+          <!-- ─── Kalkio Central ─── -->
+          <article class="location-full-card" id="central">
+            <div
+              class="location-full-image"
+              role="img"
+              aria-label="Kalkio Central — bright open-plan coworking space with natural light"
+            >
+              <img src="assets/location-central.png" alt="Kalkio Central coworking interior" loading="lazy" />
+            </div>
+            <div class="location-full-body">
+              <h2>Kalkio Central</h2>
+              <p class="location-address">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+                <!-- TODO: Replace with real address -->
+                1 Central Street, City Centre, EC1A 1AA
+              </p>
+              <p>Our flagship location, right in the heart of the city. Flooded with natural light through floor-to-ceiling windows, Kalkio Central is home to a vibrant mix of startups, freelancers, and established businesses. The rooftop terrace is a favourite for lunch breaks and informal meetings.</p>
+
+              <div class="location-tags">
+                <span class="location-tag">Hot Desks</span>
+                <span class="location-tag">Dedicated Desks</span>
+                <span class="location-tag">Private Offices</span>
+                <span class="location-tag">4 Meeting Rooms</span>
+                <span class="location-tag">Rooftop Terrace</span>
+                <span class="location-tag">24/7 Access</span>
+                <span class="location-tag">Café On-Site</span>
+              </div>
+
+              <p class="location-hours">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+                <strong>Reception hours:</strong>&nbsp;Mon–Sat 07:30–22:00 &nbsp;|&nbsp; 24/7 access for members
+              </p>
+
+              <div class="location-actions">
+                <a href="book-tour.html" class="btn btn-primary">Book a Tour</a>
+                <a href="meeting-rooms.html" class="btn btn-secondary">View Meeting Rooms</a>
+                <!-- TODO: Add link to individual location page when created -->
+              </div>
+            </div>
+          </article>
+
+          <!-- ─── Kalkio Riverside ─── (reversed layout) -->
+          <article class="location-full-card reversed" id="riverside">
+            <div
+              class="location-full-image"
+              role="img"
+              aria-label="Kalkio Riverside — coworking space with river views and event hall"
+            >
+              <img src="assets/location-riverside.png" alt="Kalkio Riverside coworking interior" loading="lazy" />
+            </div>
+            <div class="location-full-body">
+              <h2>Kalkio Riverside</h2>
+              <p class="location-address">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+                <!-- TODO: Replace with real address -->
+                12 Waterfront Lane, Riverside District, SE1 7PQ
+              </p>
+              <p>With sweeping river views from every desk, Kalkio Riverside is our most sought-after location. This converted warehouse space blends original brick, exposed beams, and lush indoor plants with the latest workplace technology. The event hall downstairs hosts over 80 events a year.</p>
+
+              <div class="location-tags">
+                <span class="location-tag">Hot Desks</span>
+                <span class="location-tag">Dedicated Desks</span>
+                <span class="location-tag">Private Offices</span>
+                <span class="location-tag">Event Hall (80 cap.)</span>
+                <span class="location-tag">River Views</span>
+                <span class="location-tag">Bar & Café</span>
+                <span class="location-tag">Bike Storage</span>
+                <span class="location-tag">Showers</span>
+              </div>
+
+              <p class="location-hours">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+                <strong>Reception hours:</strong>&nbsp;Mon–Sat 07:30–22:00 &nbsp;|&nbsp; 24/7 access for members
+              </p>
+
+              <div class="location-actions">
+                <a href="book-tour.html" class="btn btn-primary">Book a Tour</a>
+                <a href="meeting-rooms.html" class="btn btn-secondary">View Meeting Rooms</a>
+              </div>
+            </div>
+          </article>
+
+          <!-- ─── Kalkio East ─── -->
+          <article class="location-full-card" id="east">
+            <div
+              class="location-full-image"
+              role="img"
+              aria-label="Kalkio East — creative studio-style coworking in the East Creative Quarter"
+            >
+              <img src="assets/location-east.png" alt="Kalkio East coworking interior" loading="lazy" />
+            </div>
+            <div class="location-full-body">
+              <h2>Kalkio East</h2>
+              <p class="location-address">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+                <!-- TODO: Replace with real address -->
+                7 Maker's Yard, East Creative Quarter, E2 9HJ
+              </p>
+              <p>In the heart of the city's creative quarter, Kalkio East attracts designers, developers, filmmakers, and makers. The studio-style open plan is flexible and expressive, with a professional photography studio, podcast recording booth, and a dog-friendly policy that keeps the atmosphere relaxed.</p>
+
+              <div class="location-tags">
+                <span class="location-tag">Hot Desks</span>
+                <span class="location-tag">Dedicated Desks</span>
+                <span class="location-tag">Photography Studio</span>
+                <span class="location-tag">Podcast Booth</span>
+                <span class="location-tag">Dog-Friendly</span>
+                <span class="location-tag">Outdoor Courtyard</span>
+                <span class="location-tag">Creative Community</span>
+              </div>
+
+              <p class="location-hours">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+                <strong>Reception hours:</strong>&nbsp;Mon–Sat 07:30–22:00 &nbsp;|&nbsp; 24/7 access for members
+              </p>
+
+              <div class="location-actions">
+                <a href="book-tour.html" class="btn btn-primary">Book a Tour</a>
+                <a href="meeting-rooms.html" class="btn btn-secondary">View Meeting Rooms</a>
+              </div>
+            </div>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- =============================================
+         COMPARE LOCATIONS TABLE
+         ============================================= -->
+    <section style="padding: var(--space-xl) 0; background-color: var(--color-bg-warm);" aria-labelledby="compare-heading">
+      <div class="container">
+        <div class="section-header centered">
+          <span class="section-label">Compare</span>
+          <h2 class="section-title" id="compare-heading">Find the right fit</h2>
+        </div>
+
+        <div style="overflow-x: auto;">
+          <table style="width: 100%; border-collapse: collapse; font-family: var(--font-body); font-size: 0.9rem; background: var(--color-white); border-radius: var(--radius-lg); overflow: hidden; border: 1px solid #E8E8EC;">
+            <thead>
+              <tr style="background-color: var(--color-secondary); color: var(--color-white);">
+                <th scope="col" style="padding: 16px 20px; text-align: left; font-family: var(--font-display); font-weight: 600;">Feature</th>
+                <th scope="col" style="padding: 16px 20px; text-align: center; font-family: var(--font-display); font-weight: 600;">Central</th>
+                <th scope="col" style="padding: 16px 20px; text-align: center; font-family: var(--font-display); font-weight: 600;">Riverside</th>
+                <th scope="col" style="padding: 16px 20px; text-align: center; font-family: var(--font-display); font-weight: 600;">East</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr style="border-bottom: 1px solid var(--color-border);">
+                <td style="padding: 14px 20px; font-weight: 500;">Hot Desks</td>
+                <td style="padding: 14px 20px; text-align: center; color: var(--color-primary);">&#10003;</td>
+                <td style="padding: 14px 20px; text-align: center; color: var(--color-primary);">&#10003;</td>
+                <td style="padding: 14px 20px; text-align: center; color: var(--color-primary);">&#10003;</td>
+              </tr>
+              <tr style="border-bottom: 1px solid var(--color-border); background-color: var(--color-bg-light);">
+                <td style="padding: 14px 20px; font-weight: 500;">Dedicated Desks</td>
+                <td style="padding: 14px 20px; text-align: center; color: var(--color-primary);">&#10003;</td>
+                <td style="padding: 14px 20px; text-align: center; color: var(--color-primary);">&#10003;</td>
+                <td style="padding: 14px 20px; text-align: center; color: var(--color-primary);">&#10003;</td>
+              </tr>
+              <tr style="border-bottom: 1px solid var(--color-border);">
+                <td style="padding: 14px 20px; font-weight: 500;">Private Offices</td>
+                <td style="padding: 14px 20px; text-align: center; color: var(--color-primary);">&#10003;</td>
+                <td style="padding: 14px 20px; text-align: center; color: var(--color-primary);">&#10003;</td>
+                <td style="padding: 14px 20px; text-align: center; color: var(--color-text-muted);">—</td>
+              </tr>
+              <tr style="border-bottom: 1px solid var(--color-border); background-color: var(--color-bg-light);">
+                <td style="padding: 14px 20px; font-weight: 500;">Event Space</td>
+                <td style="padding: 14px 20px; text-align: center; color: var(--color-text-muted);">—</td>
+                <td style="padding: 14px 20px; text-align: center; color: var(--color-primary);">&#10003; (80 cap.)</td>
+                <td style="padding: 14px 20px; text-align: center; color: var(--color-text-muted);">—</td>
+              </tr>
+              <tr style="border-bottom: 1px solid var(--color-border);">
+                <td style="padding: 14px 20px; font-weight: 500;">24/7 Access</td>
+                <td style="padding: 14px 20px; text-align: center; color: var(--color-primary);">&#10003;</td>
+                <td style="padding: 14px 20px; text-align: center; color: var(--color-primary);">&#10003;</td>
+                <td style="padding: 14px 20px; text-align: center; color: var(--color-primary);">&#10003;</td>
+              </tr>
+              <tr style="border-bottom: 1px solid var(--color-border); background-color: var(--color-bg-light);">
+                <td style="padding: 14px 20px; font-weight: 500;">On-Site Café</td>
+                <td style="padding: 14px 20px; text-align: center; color: var(--color-primary);">&#10003;</td>
+                <td style="padding: 14px 20px; text-align: center; color: var(--color-primary);">&#10003; + Bar</td>
+                <td style="padding: 14px 20px; text-align: center; color: var(--color-text-muted);">—</td>
+              </tr>
+              <tr style="border-bottom: 1px solid var(--color-border);">
+                <td style="padding: 14px 20px; font-weight: 500;">Dog-Friendly</td>
+                <td style="padding: 14px 20px; text-align: center; color: var(--color-text-muted);">—</td>
+                <td style="padding: 14px 20px; text-align: center; color: var(--color-text-muted);">—</td>
+                <td style="padding: 14px 20px; text-align: center; color: var(--color-primary);">&#10003;</td>
+              </tr>
+              <tr style="background-color: var(--color-bg-light);">
+                <td style="padding: 14px 20px; font-weight: 500;">Photography / Podcast Studio</td>
+                <td style="padding: 14px 20px; text-align: center; color: var(--color-text-muted);">—</td>
+                <td style="padding: 14px 20px; text-align: center; color: var(--color-text-muted);">—</td>
+                <td style="padding: 14px 20px; text-align: center; color: var(--color-primary);">&#10003;</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </section>
+
+    <!-- =============================================
+         CTA STRIP
+         ============================================= -->
+    <section class="cta-strip" aria-labelledby="locations-cta-heading">
+      <div class="container">
+        <h2 id="locations-cta-heading">Ready to see it in person?</h2>
+        <p>Book a free tour at any Kalkio location and we'll show you around.</p>
+        <div class="cta-strip-actions">
+          <a href="book-tour.html" class="btn btn-white">Book a Free Tour</a>
+          <a href="index.html#enquire" class="btn btn-outline-white">Send an Enquiry</a>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- =============================================
+       FOOTER
+       ============================================= -->
+  <footer class="site-footer" role="contentinfo">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a href="index.html" class="nav-logo" aria-label="Kalkio Workspace — Home">Kalkio Workspace</a>
+          <p>Inspiring coworking spaces designed for focus, collaboration, and growth. Find your space today.</p>
+          <div class="footer-social" aria-label="Social media links">
+            <a href="#" class="social-icon" aria-label="LinkedIn">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6zM2 9h4v12H2z"/><circle cx="4" cy="4" r="2"/></svg>
+            </a>
+            <a href="#" class="social-icon" aria-label="Instagram">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg>
+            </a>
+            <a href="#" class="social-icon" aria-label="X (Twitter)">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg>
+            </a>
+          </div>
+        </div>
+        <nav class="footer-col" aria-label="Spaces links">
+          <h4>Spaces</h4>
+          <ul>
+            <li><a href="locations.html">All Locations</a></li>
+            <li><a href="locations.html#central">Kalkio Central</a></li>
+            <li><a href="locations.html#riverside">Kalkio Riverside</a></li>
+            <li><a href="locations.html#east">Kalkio East</a></li>
+            <li><a href="meeting-rooms.html">Meeting Rooms</a></li>
+            <li><a href="event-spaces.html">Event Spaces</a></li>
+          </ul>
+        </nav>
+        <nav class="footer-col" aria-label="Company links">
+          <h4>Company</h4>
+          <ul>
+            <li><a href="#">About Us</a></li>
+            <li><a href="#">Careers</a></li>
+            <li><a href="#">Press</a></li>
+            <li><a href="#">Blog</a></li>
+            <li><a href="#">Partners</a></li>
+          </ul>
+        </nav>
+        <nav class="footer-col" aria-label="Support links">
+          <h4>Support</h4>
+          <ul>
+            <li><a href="book-tour.html">Book a Tour</a></li>
+            <li><a href="index.html#enquire">Contact Us</a></li>
+            <li><a href="#">FAQs</a></li>
+            <li><a href="#">Member Portal</a></li>
+            <li><a href="#">Community</a></li>
+          </ul>
+        </nav>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2025 Kalkio Workspace Ltd. All rights reserved.</p>
+        <div class="footer-bottom-links">
+          <a href="#">Privacy Policy</a>
+          <a href="#">Terms of Use</a>
+          <a href="#">Cookie Policy</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Chatbot -->
+  <button id="chat-launcher" aria-label="Open chat" aria-expanded="false" aria-controls="chat-widget">
+    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg>
+  </button>
+  <div id="chat-widget" role="dialog" aria-label="Kalkio Support Chat" aria-modal="true">
+    <div class="chat-header">
+      <div class="chat-header-info">
+        <span class="chat-header-dot" aria-hidden="true"></span>
+        <span>Kalkio Support</span>
+      </div>
+      <button id="chat-close" aria-label="Close chat">&#x2715;</button>
+    </div>
+    <div class="chat-body">
+      <!-- TODO: Replace with your chatbot embed code -->
+      <p class="chat-placeholder-msg">Chat embed will appear here.<br />Replace this placeholder with your platform's chatbot embed code.</p>
+    </div>
+  </div>
+
+  <script src="main.js"></script>
+</body>
+</html>

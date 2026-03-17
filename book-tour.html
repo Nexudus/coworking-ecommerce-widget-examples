@@ -1,0 +1,434 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Book a free tour of Kalkio Workspace. See our coworking spaces in person and find the right plan for you." />
+  <title>Book a Tour — Kalkio Workspace</title>
+
+  <script src="https://mcp.figma.com/mcp/html-to-design/capture.js" async></script>
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Parkinsans:wght@400;500;600&family=Poppins:wght@400;500;600&display=swap" rel="stylesheet" />
+
+  <!-- Shared Stylesheet -->
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <!-- =============================================
+       NAVIGATION
+       ============================================= -->
+  <header class="site-nav" role="banner">
+    <div class="container nav-inner">
+      <a href="index.html" class="nav-logo" aria-label="Kalkio Workspace — Home">Kalkio Workspace</a>
+
+      <nav class="nav-links" aria-label="Primary navigation">
+        <a href="locations.html">Locations</a>
+        <a href="meeting-rooms.html">Meeting Rooms</a>
+        <a href="event-spaces.html">Event Spaces</a>
+        <a href="book-tour.html" class="active">Book a Tour</a>
+      </nav>
+
+      <div class="nav-actions">
+        <a href="#" class="btn btn-primary">Member login</a>
+      </div>
+
+      <button class="nav-hamburger" aria-label="Open menu" aria-expanded="false" aria-controls="mobile-menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+
+    <nav class="nav-mobile" id="mobile-menu" aria-label="Mobile navigation">
+      <a href="locations.html">Locations</a>
+      <a href="meeting-rooms.html">Meeting Rooms</a>
+      <a href="event-spaces.html">Event Spaces</a>
+      <a href="book-tour.html">Book a Tour</a>
+      <div class="nav-mobile-actions">
+        <a href="#" class="btn btn-secondary">Member Login</a>
+        <a href="book-tour.html" class="btn btn-primary">Book a Tour</a>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+
+    <!-- =============================================
+         PAGE HERO
+         ============================================= -->
+    <section class="page-hero" aria-labelledby="page-hero-heading">
+      <div class="container">
+        <nav class="breadcrumb" aria-label="Breadcrumb">
+          <a href="index.html">Home</a>
+          <span class="breadcrumb-sep" aria-hidden="true">/</span>
+          <span aria-current="page">Book a Tour</span>
+        </nav>
+        <h1 class="page-hero-title" id="page-hero-heading">Book a Free Tour</h1>
+        <p class="page-hero-subtitle">Come and see Kalkio for yourself. Our team will walk you through the spaces, answer your questions, and help you find the perfect fit — no pressure, no commitment.</p>
+      </div>
+    </section>
+
+    <!-- =============================================
+         TOUR BOOKING SECTION
+         ============================================= -->
+    <section class="book-tour-section" aria-labelledby="tour-form-heading">
+      <div class="container">
+        <div class="book-tour-grid">
+
+          <!-- Left: info & steps -->
+          <div class="book-tour-info">
+            <h2>What to expect</h2>
+            <p>A Kalkio tour takes around 30–45 minutes. You'll see the full space, meet the team, and leave with a clear picture of how our memberships work.</p>
+
+            <div class="tour-steps" role="list">
+
+              <div class="tour-step" role="listitem">
+                <div class="tour-step-number" aria-label="Step 1">1</div>
+                <div class="tour-step-text">
+                  <h4>Choose your location & time</h4>
+                  <p>Pick the Kalkio location you'd like to visit and a time that works for you. We offer tours weekdays from 9 am to 5 pm.</p>
+                </div>
+              </div>
+
+              <div class="tour-step" role="listitem">
+                <div class="tour-step-number" aria-label="Step 2">2</div>
+                <div class="tour-step-text">
+                  <h4>We'll confirm within hours</h4>
+                  <p>You'll receive an email confirmation with all the details — including what to bring and how to find us.</p>
+                </div>
+              </div>
+
+              <div class="tour-step" role="listitem">
+                <div class="tour-step-number" aria-label="Step 3">3</div>
+                <div class="tour-step-text">
+                  <h4>See the space in person</h4>
+                  <p>Meet your Kalkio host, explore the spaces, and ask anything you like. We'll make sure you leave with all the information you need.</p>
+                </div>
+              </div>
+
+              <div class="tour-step" role="listitem">
+                <div class="tour-step-number" aria-label="Step 4">4</div>
+                <div class="tour-step-text">
+                  <h4>Find your perfect plan</h4>
+                  <p>If you love what you see, we'll walk you through the right membership — no hard sell, just honest guidance.</p>
+                </div>
+              </div>
+
+            </div>
+
+            <!-- Location quick-links -->
+            <div style="margin-top: 40px; padding: 24px; background-color: var(--color-white); border-radius: var(--radius-lg); border: 1px solid var(--color-border);">
+              <h3 style="font-family: var(--font-display); font-size: 1.0625rem; font-weight: 600; color: var(--color-secondary); margin-bottom: 16px;">Our Locations</h3>
+              <div style="display: flex; flex-direction: column; gap: 14px;">
+
+                <div style="display: flex; align-items: flex-start; gap: 12px;">
+                  <div style="width: 8px; height: 8px; border-radius: 50%; background-color: var(--color-primary); flex-shrink: 0; margin-top: 6px;"></div>
+                  <div>
+                    <p style="font-family: var(--font-display); font-size: 0.9375rem; font-weight: 600; color: var(--color-secondary); margin-bottom: 2px;">Kalkio Central</p>
+                    <!-- TODO: Replace with real address -->
+                    <p style="font-size: 0.875rem; color: var(--color-text-muted);">1 Central Street, City Centre, EC1A 1AA</p>
+                  </div>
+                </div>
+
+                <div style="display: flex; align-items: flex-start; gap: 12px;">
+                  <div style="width: 8px; height: 8px; border-radius: 50%; background-color: var(--color-primary); flex-shrink: 0; margin-top: 6px;"></div>
+                  <div>
+                    <p style="font-family: var(--font-display); font-size: 0.9375rem; font-weight: 600; color: var(--color-secondary); margin-bottom: 2px;">Kalkio Riverside</p>
+                    <!-- TODO: Replace with real address -->
+                    <p style="font-size: 0.875rem; color: var(--color-text-muted);">12 Waterfront Lane, Riverside District, SE1 7PQ</p>
+                  </div>
+                </div>
+
+                <div style="display: flex; align-items: flex-start; gap: 12px;">
+                  <div style="width: 8px; height: 8px; border-radius: 50%; background-color: var(--color-primary); flex-shrink: 0; margin-top: 6px;"></div>
+                  <div>
+                    <p style="font-family: var(--font-display); font-size: 0.9375rem; font-weight: 600; color: var(--color-secondary); margin-bottom: 2px;">Kalkio East</p>
+                    <!-- TODO: Replace with real address -->
+                    <p style="font-size: 0.875rem; color: var(--color-text-muted);">7 Maker's Yard, East Creative Quarter, E2 9HJ</p>
+                  </div>
+                </div>
+
+              </div>
+            </div>
+          </div>
+
+          <!-- Right: tour request form -->
+          <div class="book-tour-form">
+            <h3 id="tour-form-heading">Request a Tour</h3>
+            <form id="tour-form" novalidate aria-label="Tour booking form">
+              <div class="form-grid">
+
+                <div class="form-group">
+                  <label for="tour-first-name">First Name <span aria-hidden="true">*</span></label>
+                  <input type="text" id="tour-first-name" name="first_name" required placeholder="Jane" autocomplete="given-name" />
+                  <span class="form-error-msg" role="alert"></span>
+                </div>
+
+                <div class="form-group">
+                  <label for="tour-last-name">Last Name <span aria-hidden="true">*</span></label>
+                  <input type="text" id="tour-last-name" name="last_name" required placeholder="Smith" autocomplete="family-name" />
+                  <span class="form-error-msg" role="alert"></span>
+                </div>
+
+                <div class="form-group">
+                  <label for="tour-email">Email Address <span aria-hidden="true">*</span></label>
+                  <input type="email" id="tour-email" name="email" required placeholder="jane@company.com" autocomplete="email" />
+                  <span class="form-error-msg" role="alert"></span>
+                </div>
+
+                <div class="form-group">
+                  <label for="tour-phone">Phone Number</label>
+                  <input type="tel" id="tour-phone" name="phone" placeholder="+44 7700 000000" autocomplete="tel" />
+                  <span class="form-error-msg" role="alert"></span>
+                </div>
+
+                <div class="form-group">
+                  <label for="tour-company">Company / Organisation</label>
+                  <input type="text" id="tour-company" name="company" placeholder="Acme Ltd" autocomplete="organization" />
+                  <span class="form-error-msg" role="alert"></span>
+                </div>
+
+                <div class="form-group">
+                  <label for="tour-team-size">Team Size</label>
+                  <select id="tour-team-size" name="team_size">
+                    <option value="" disabled selected>Select…</option>
+                    <option value="1">Just me</option>
+                    <option value="2-5">2–5 people</option>
+                    <option value="6-10">6–10 people</option>
+                    <option value="11-20">11–20 people</option>
+                    <option value="21+">21+ people</option>
+                  </select>
+                  <span class="form-error-msg" role="alert"></span>
+                </div>
+
+                <div class="form-group">
+                  <label for="tour-location">Preferred Location <span aria-hidden="true">*</span></label>
+                  <select id="tour-location" name="location" required>
+                    <option value="" disabled selected>Choose a location…</option>
+                    <option value="central">Kalkio Central</option>
+                    <option value="riverside">Kalkio Riverside</option>
+                    <option value="east">Kalkio East</option>
+                    <option value="any">Any / Open to all</option>
+                  </select>
+                  <span class="form-error-msg" role="alert"></span>
+                </div>
+
+                <div class="form-group">
+                  <label for="tour-preferred-date">Preferred Date</label>
+                  <input type="date" id="tour-preferred-date" name="preferred_date" min="" />
+                  <span class="form-error-msg" role="alert"></span>
+                </div>
+
+                <div class="form-group">
+                  <label for="tour-preferred-time">Preferred Time</label>
+                  <select id="tour-preferred-time" name="preferred_time">
+                    <option value="" disabled selected>Select a time…</option>
+                    <option value="9am">9:00 am</option>
+                    <option value="10am">10:00 am</option>
+                    <option value="11am">11:00 am</option>
+                    <option value="12pm">12:00 pm</option>
+                    <option value="1pm">1:00 pm</option>
+                    <option value="2pm">2:00 pm</option>
+                    <option value="3pm">3:00 pm</option>
+                    <option value="4pm">4:00 pm</option>
+                  </select>
+                  <span class="form-error-msg" role="alert"></span>
+                </div>
+
+                <div class="form-group">
+                  <label for="tour-space-interest">Space Interest <span aria-hidden="true">*</span></label>
+                  <select id="tour-space-interest" name="space_interest" required>
+                    <option value="" disabled selected>What are you looking for?</option>
+                    <option value="hot-desk">Hot Desk</option>
+                    <option value="dedicated-desk">Dedicated Desk</option>
+                    <option value="private-office">Private Office</option>
+                    <option value="meeting-rooms">Meeting Rooms Only</option>
+                    <option value="event-space">Event Space</option>
+                    <option value="not-sure">Not sure yet</option>
+                  </select>
+                  <span class="form-error-msg" role="alert"></span>
+                </div>
+
+                <div class="form-group full-width">
+                  <label for="tour-message">Anything else we should know?</label>
+                  <textarea id="tour-message" name="message" placeholder="E.g. specific requirements, accessibility needs, questions about pricing…"></textarea>
+                  <span class="form-error-msg" role="alert"></span>
+                </div>
+
+              </div>
+
+              <button type="submit" class="btn btn-primary form-submit">Request My Tour</button>
+              <p style="font-size: 0.8125rem; color: var(--color-text-muted); margin-top: 12px; text-align: center;">
+                We'll confirm your tour within a few hours on business days.
+              </p>
+              <div id="tour-success" class="form-success" role="status" aria-live="polite"></div>
+            </form>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- =============================================
+         FAQs
+         ============================================= -->
+    <section style="padding: var(--space-xl) 0; background-color: var(--color-white);" aria-labelledby="faq-heading">
+      <div class="container">
+        <div class="section-header centered">
+          <span class="section-label">FAQ</span>
+          <h2 class="section-title" id="faq-heading">Common questions</h2>
+        </div>
+
+        <div style="max-width: 720px; margin: 0 auto; display: flex; flex-direction: column; gap: 16px;">
+
+          <details style="border: 1px solid var(--color-border); border-radius: var(--radius-md); padding: 0; overflow: hidden;">
+            <summary style="padding: 18px 20px; font-family: var(--font-display); font-size: 1rem; font-weight: 600; color: var(--color-secondary); cursor: pointer; list-style: none; display: flex; justify-content: space-between; align-items: center;">
+              Is the tour really free?
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" style="flex-shrink:0;"><polyline points="6 9 12 15 18 9"/></svg>
+            </summary>
+            <p style="padding: 0 20px 18px; font-size: 0.9375rem; color: var(--color-text-muted); line-height: 1.7;">Yes, completely. There's no commitment, no sales pressure — just a genuine chance to see the spaces, meet the team, and ask any questions.</p>
+          </details>
+
+          <details style="border: 1px solid var(--color-border); border-radius: var(--radius-md); padding: 0; overflow: hidden;">
+            <summary style="padding: 18px 20px; font-family: var(--font-display); font-size: 1rem; font-weight: 600; color: var(--color-secondary); cursor: pointer; list-style: none; display: flex; justify-content: space-between; align-items: center;">
+              How long does a tour take?
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" style="flex-shrink:0;"><polyline points="6 9 12 15 18 9"/></svg>
+            </summary>
+            <p style="padding: 0 20px 18px; font-size: 0.9375rem; color: var(--color-text-muted); line-height: 1.7;">Most tours last between 30 and 45 minutes, depending on how many questions you have. If you'd like to go deeper on a particular space or pricing, we're happy to spend longer.</p>
+          </details>
+
+          <details style="border: 1px solid var(--color-border); border-radius: var(--radius-md); padding: 0; overflow: hidden;">
+            <summary style="padding: 18px 20px; font-family: var(--font-display); font-size: 1rem; font-weight: 600; color: var(--color-secondary); cursor: pointer; list-style: none; display: flex; justify-content: space-between; align-items: center;">
+              Can I trial a desk before committing?
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" style="flex-shrink:0;"><polyline points="6 9 12 15 18 9"/></svg>
+            </summary>
+            <p style="padding: 0 20px 18px; font-size: 0.9375rem; color: var(--color-text-muted); line-height: 1.7;">Yes — we offer a day pass option so you can experience the space before signing up for a membership. Ask your host about this during your tour.</p>
+          </details>
+
+          <details style="border: 1px solid var(--color-border); border-radius: var(--radius-md); padding: 0; overflow: hidden;">
+            <summary style="padding: 18px 20px; font-family: var(--font-display); font-size: 1rem; font-weight: 600; color: var(--color-secondary); cursor: pointer; list-style: none; display: flex; justify-content: space-between; align-items: center;">
+              Do you have parking?
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" style="flex-shrink:0;"><polyline points="6 9 12 15 18 9"/></svg>
+            </summary>
+            <p style="padding: 0 20px 18px; font-size: 0.9375rem; color: var(--color-text-muted); line-height: 1.7;">All Kalkio locations are well-connected by public transport. Paid parking is available nearby at each site, and Kalkio East has limited on-street parking. We also offer secure bike storage at all locations.</p>
+          </details>
+
+          <details style="border: 1px solid var(--color-border); border-radius: var(--radius-md); padding: 0; overflow: hidden;">
+            <summary style="padding: 18px 20px; font-family: var(--font-display); font-size: 1rem; font-weight: 600; color: var(--color-secondary); cursor: pointer; list-style: none; display: flex; justify-content: space-between; align-items: center;">
+              Are the spaces accessible?
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" style="flex-shrink:0;"><polyline points="6 9 12 15 18 9"/></svg>
+            </summary>
+            <p style="padding: 0 20px 18px; font-size: 0.9375rem; color: var(--color-text-muted); line-height: 1.7;">Yes. All Kalkio locations are step-free accessible, with lift access to all floors, accessible toilets, and adjustable desks available. Let us know of any specific requirements when you book and we'll make sure everything is ready.</p>
+          </details>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- =============================================
+         CTA STRIP
+         ============================================= -->
+    <section class="cta-strip" aria-labelledby="book-cta-heading">
+      <div class="container">
+        <h2 id="book-cta-heading">Prefer to speak to someone first?</h2>
+        <p>Our team is happy to answer questions before you visit. Get in touch and we'll come back to you quickly.</p>
+        <div class="cta-strip-actions">
+          <a href="index.html#enquire" class="btn btn-white">Send an enquiry</a>
+          <!-- TODO: Replace href with your actual phone number link -->
+          <a href="tel:+44200000000" class="btn btn-outline-white">Call Us</a>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- =============================================
+       FOOTER
+       ============================================= -->
+  <footer class="site-footer" role="contentinfo">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a href="index.html" class="nav-logo" aria-label="Kalkio Workspace — Home">Kalkio Workspace</a>
+          <p>Inspiring coworking spaces designed for focus, collaboration, and growth.</p>
+          <div class="footer-social" aria-label="Social media links">
+            <a href="#" class="social-icon" aria-label="LinkedIn">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6zM2 9h4v12H2z"/><circle cx="4" cy="4" r="2"/></svg>
+            </a>
+            <a href="#" class="social-icon" aria-label="Instagram">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg>
+            </a>
+            <a href="#" class="social-icon" aria-label="X (Twitter)">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg>
+            </a>
+          </div>
+        </div>
+        <nav class="footer-col" aria-label="Spaces links">
+          <h4>Spaces</h4>
+          <ul>
+            <li><a href="locations.html">All Locations</a></li>
+            <li><a href="meeting-rooms.html">Meeting Rooms</a></li>
+            <li><a href="event-spaces.html">Event Spaces</a></li>
+          </ul>
+        </nav>
+        <nav class="footer-col" aria-label="Company links">
+          <h4>Company</h4>
+          <ul>
+            <li><a href="#">About Us</a></li>
+            <li><a href="#">Careers</a></li>
+            <li><a href="#">Blog</a></li>
+          </ul>
+        </nav>
+        <nav class="footer-col" aria-label="Support links">
+          <h4>Support</h4>
+          <ul>
+            <li><a href="book-tour.html">Book a Tour</a></li>
+            <li><a href="index.html#enquire">Contact Us</a></li>
+            <li><a href="#">FAQs</a></li>
+          </ul>
+        </nav>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2025 Kalkio Workspace Ltd. All rights reserved.</p>
+        <div class="footer-bottom-links">
+          <a href="#">Privacy Policy</a>
+          <a href="#">Terms of Use</a>
+          <a href="#">Cookie Policy</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Chatbot -->
+  <button id="chat-launcher" aria-label="Open chat" aria-expanded="false" aria-controls="chat-widget">
+    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg>
+  </button>
+  <div id="chat-widget" role="dialog" aria-label="Kalkio Support Chat" aria-modal="true">
+    <div class="chat-header">
+      <div class="chat-header-info">
+        <span class="chat-header-dot" aria-hidden="true"></span>
+        <span>Kalkio Support</span>
+      </div>
+      <button id="chat-close" aria-label="Close chat">&#x2715;</button>
+    </div>
+    <div class="chat-body">
+      <!-- TODO: Replace with your chatbot embed code -->
+      <p class="chat-placeholder-msg">Chat embed will appear here.<br />Replace this placeholder with your platform's chatbot embed code.</p>
+    </div>
+  </div>
+
+  <!-- Shared JavaScript -->
+  <script src="main.js"></script>
+
+  <!-- Set min date on date picker to today -->
+  <script>
+    const datePicker = document.getElementById('tour-preferred-date');
+    if (datePicker) {
+      const today = new Date().toISOString().split('T')[0];
+      datePicker.setAttribute('min', today);
+    }
+  </script>
+</body>
+</html>
